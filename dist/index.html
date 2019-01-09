@@ -128,35 +128,56 @@
     <div class="mdc-layout-grid__inner">
         <div id="contact" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
             <h4>Hi there, want to reach out? Go ahead and send me a email.</h4>
-            <form id="demo-form" action="post.php" method="post" name="contactus">
-		        <label for="name">Name:</label> <input type="text" name="name" class="form-control"/>                
-                <label for="email">Email:</label> <input type="email" name="email" class="form-control" required=""/>
-                <label for="phone">Phone:</label> <input type="tel" name="phone" class="form-control"/><br>
-                <label for="comment">Message:</label><textarea name="comment" class="full-width"></textarea><br>     
-                <button type="submit" class="button">Submit</button>
-            </form>	
+        </div>
+        <br>
+    <form id="demo-form" action="post.php" method="post" name="contactus"></form>
+    
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <input class="mdc-text-field__input" type="text" name="name" placeholder="Name"/>
+        </div>
+    </div>
+    <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+            <input class="mdc-text-field__input" type="email" name="email" placeholder="Email" required=""/>
+        </div>        
+    
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">            
+        
+            <input class="mdc-text-field__input" type="tel" name="phone" placeholder="Phone" />
+        </div>
+    </div>
+    <div class="mdc-layout-grid__inner">  
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <textarea class="mdc-text-field__input" name="comment" placeholder="Message" ></textarea>
+        </div>
+        <br>   
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <button type="submit" class="button">Submit</button>
+        </div>
+            
+        </form>	
+    </div>    
+    <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"> 
             <div class="mdc-text-field">
                 <input type="text" id="my-text-field" class="mdc-text-field__input">
                 <label class="mdc-floating-label" for="my-text-field">Hint text</label>
                 <div class="mdc-line-ripple"></div>
             </div>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"> 
             <input id="datepicker" />
                 <script>
                     $('#datepicker').datepicker();
                 </script> 
         </div>
-    </div>
+    </div>    
     <div class="mdc-layout-grid__inner">
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
             <hr>
             <p>For booking <a href="mailto:mushel@gmail.com">email me</a>!</p>
             <p>&copy; Michelle Currier</p>
-            <div class="mdc-text-field mdc-text-field--fullwidth">
-                    <input class="mdc-text-field__input"
-                        type="text"
-                        placeholder="Full-Width Text Field"
-                        aria-label="Full-Width Text Field">
-                </div>
+            
         </div>
         
     </div>
