@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Assets</title>
+<title>dj Nice Rack</title>
 <link rel="stylesheet" href="bundle.css">
 <script src="./print.bundle.js"></script>
 </head>
@@ -9,7 +9,6 @@
 <div class="mdc-layout-grid">
     <div class="mdc-layout-grid__inner">
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-           
             <div class="mdc-menu mdc-menu-surface" tabindex="-1">
                 <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
                   <li class="mdc-list-item mdc-list-item--disabled" role="menuitem">
@@ -17,6 +16,9 @@
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <a href="#shows" class="mdc-list-item__text">Shows</a>
+                  </li>
+                  <li class="mdc-list-item" role="menuitem">
+                    <a href="#contact" class="mdc-list-item__text">Contact</a>
                   </li>
                 </ul>
             </div>
@@ -28,6 +30,9 @@
                     </li>
                     <li class="article__nav-item" role="menuitem">
                         <a href="#shows" class="article__nav-link js-anchor-link">Shows</a>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                        <a href="#contact" class="mdc-list-item__text">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -121,16 +126,43 @@
         </div>
     </div>
     <div class="mdc-layout-grid__inner">
+        <div id="contact" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <h4>Hi there, want to reach out? Go ahead and send me a email.</h4>
+            <form id="demo-form" action="post.php" method="post" name="contactus">
+		        <label for="name">Name:</label> <input type="text" name="name" class="form-control"/>                
+                <label for="email">Email:</label> <input type="email" name="email" class="form-control" required=""/>
+                <label for="phone">Phone:</label> <input type="tel" name="phone" class="form-control"/><br>
+                <label for="comment">Message:</label><textarea name="comment" class="full-width"></textarea><br>     
+                <button type="submit" class="button">Submit</button>
+            </form>	
+            <div class="mdc-text-field">
+                <input type="text" id="my-text-field" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="my-text-field">Hint text</label>
+                <div class="mdc-line-ripple"></div>
+            </div>
+            <input id="datepicker" />
+                <script>
+                    $('#datepicker').datepicker();
+                </script> 
+        </div>
+    </div>
+    <div class="mdc-layout-grid__inner">
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
             <hr>
             <p>For booking <a href="mailto:mushel@gmail.com">email me</a>!</p>
             <p>&copy; Michelle Currier</p>
+            <div class="mdc-text-field mdc-text-field--fullwidth">
+                    <input class="mdc-text-field__input"
+                        type="text"
+                        placeholder="Full-Width Text Field"
+                        aria-label="Full-Width Text Field">
+                </div>
         </div>
+        
     </div>
-
 </div>
     
-
+<script src="form-validation.js" type="text/javascript"></script>
 
 <script src="./bundle.js"></script>
 </body>
