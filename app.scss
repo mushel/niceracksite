@@ -1,0 +1,97 @@
+@import "/node_modules/@material/layout-grid/mdc-layout-grid";
+@import "/node_modules/@material/button/mdc-button";
+@import "/node_modules/@material/list/mdc-list";
+@import "/node_modules/@material/menu-surface/mdc-menu-surface";
+@import "/node_modules/@material/menu/mdc-menu";
+@import "/node_modules/@material/animation/variables";
+
+$font-stack: 'Montserrat', sans-serif;
+$prime-color: #252762;
+$second-color: #27ae90;
+$transparent50: rgba(255, 255, 255, .5);
+
+html {
+    background: #2E90C2;
+}
+body {
+    color: $prime-color;
+    font-family: $font-stack;
+    font-size: 100%;
+    font-weight: 400;
+    background-image: linear-gradient(-180deg, #3EB3DF 0%, #2E90C2 90%);  
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+h1, h2, h3, h6, p {
+    margin: 0px;
+}
+h1 {
+    font-size: 60px;
+    font-weight: 100;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+h6 {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+}
+.button {
+    font-size: 39px;
+    font-weight: 900;
+}
+p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 24px;
+}
+.home {
+    background: url(/./images/5.jpg);
+}
+.img {
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box; 
+    border-radius: 4px;
+}
+
+hr {
+    height: 6px;
+    border-radius: 5px;
+    background: #fff;
+    width: 50%;
+    border-width: 0px;
+    margin: 40px auto;
+}
+
+table {
+    th {
+        padding: 8px;
+        border-bottom: 1px solid $transparent50;
+    }
+    td {
+        padding: 8px;
+        vertical-align: top;
+        border-bottom: 1px solid $transparent50;
+        border-spacing: 0px;
+    }
+    tr {
+        border-spacing: 0px;
+    }
+}
+.animatable {
+    animation: foo-keyframe 2ms $mdc-animation-standard-curve-timing-function;
+}
