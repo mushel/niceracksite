@@ -130,27 +130,45 @@
             <h4>Hi there, want to reach out? Go ahead and send me a email.</h4>
         </div>
         <br>
-    <form id="demo-form" action="post.php" method="post" name="contactus"></form>
     
-        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-            <input class="mdc-text-field__input" type="text" name="name" placeholder="Name"/>
-        </div>
     </div>
+    <form id="demo-form" action="post.php" method="post" name="contactus">
     <div class="mdc-layout-grid__inner">
-        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
-            <input class="mdc-text-field__input" type="email" name="email" placeholder="Email" required=""/>
+        
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <div class="mdc-text-field">            
+                <input class="mdc-text-field__input" type="text" name="name" />
+                <label class="mdc-floating-label" for="name">Name</label>
+                <div class="mdc-line-ripple"></div>
+            </div>
+        </div>
+    
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <div class="mdc-text-field"> 
+                <input class="mdc-text-field__input" type="email" name="email" required=""/>
+                <label class="mdc-floating-label" for="email">Email</label>
+                <div class="mdc-line-ripple"></div>
+            </div>
         </div>        
     
-        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">            
-        
-            <input class="mdc-text-field__input" type="tel" name="phone" placeholder="Phone" />
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">            
+            <div class="mdc-text-field"> 
+                <input class="mdc-text-field__input" type="tel" name="phone" />
+                <label class="mdc-floating-label" for="phone">Phone</label>
+                <div class="mdc-line-ripple"></div>
+            </div>
         </div>
     </div>
     <div class="mdc-layout-grid__inner">  
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-            <textarea class="mdc-text-field__input" name="comment" placeholder="Message" ></textarea>
+            <label for="comment">Message</label>
+            <div class="mdc-text-field--fullwidth mdc-text-field"> 
+            <textarea class="mdc-text-field__input" name="comment" ></textarea>
+            <div class="mdc-line-ripple"></div>
+            </div>
         </div>
-        <br>   
+        <br> 
+    
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
             <button type="submit" class="button">Submit</button>
         </div>
